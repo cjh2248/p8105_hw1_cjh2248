@@ -7,6 +7,7 @@ output: github_document
 library(tidyverse)
 library(palmerpenguins)
 library(ggplot2)
+library(tibble)
 ```
 
 ## Problem 1
@@ -25,6 +26,21 @@ ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)
 
 ```{r}
 ggsave("flipper_length_mm vs. bill_length_mm.png")
+```
+
+## Problem 2
+
+```{r}
+sample_df = tibble(
+  random_sample = rnorm(10), 
+  vec_char = c("red", "orange", "yellow", "blue", "green", "pink", "purple", "black", "white", "gray" ),
+  greater_than_zero = random_sample > 0,
+  vec_factor = factor(sample(c("Level 1", "Level 2", "Level 3"), 10, replace = TRUE))
+)
+```
+
+```{r}
+print(sample_df)
 ```
 
 
