@@ -58,4 +58,4 @@ mean_vec_factor = mean(as.numeric(sample_df[["vec_factor"]]))
 print(mean_vec_factor)
 ```
 
-The only variable we cannot take the mean of is character vector due to the data not being quantifable. 
+The only variable we cannot take the mean of is character vector due to the data not being quantifiable. 
