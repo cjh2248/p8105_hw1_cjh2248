@@ -43,7 +43,19 @@ sample_df = tibble(
 print(sample_df)
 ```
 
+```{r}
+mean_random_sample = mean(sample_df[["random_sample"]])
+print(mean_random_sample)
+```
 
+```{r}
+mean_greater_than_zero = mean(sample_df[["greater_than_zero"]])
+print(mean_random_sample)
+```
 
+```{r}
+mean_vec_factor = mean(as.numeric(sample_df[["vec_factor"]])) 
+print(mean_vec_factor)
+```
 
-
+The only variable we cannot take the mean of is character vector due to the data not being quantifable. 
