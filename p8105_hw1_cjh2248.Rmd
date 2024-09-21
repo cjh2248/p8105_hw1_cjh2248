@@ -3,6 +3,22 @@ title: "P8105 HW 1"
 output: github_document
 ---
 
-```{r setup, echo = FALSE, message = FALSE}
+```{r}
 library(tidyverse)
+library(palmerpenguins)
+library(ggplot2)
 ```
+
+```{r}
+data(penguins)
+```
+
+## Problem 1
+
+This data has the following variables listed: species, island, bill length (mm), bill depth (mm), flipper length (mm), body mass (g), sex, and year. This particular dataset has 8 columns and 344 rows. 
+
+```{r}
+mean(penguins[["flipper_length_mm"]], na.rm = TRUE)
+```
+
+
